@@ -1,0 +1,385 @@
+/*css reset*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	font-family: verdana;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/*Navigation bar*/
+#navbar{
+	display: flex;
+	align-items: center;
+
+	top:0px;
+	flex-wrap: wrap;
+	position: relative;
+
+}
+/*Navigation bar: logo and image*/
+#logo{
+margin: 15px 10px;
+}
+/*Navigation bar: logo and image*/
+#logo img{
+margin:3px 3px;
+height: 55px; 
+border-radius: 50%;
+width:60px;
+}
+/*Navigation bar:list-styling*/
+#navbar ul{
+	display: flex;
+	font-family: 'Baloo Bhai 2', cursive;
+	flex-wrap: wrap;
+	
+}
+
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+}
+#navbar ul li a{
+		display: block;
+		padding: 3px 22px;
+		border-radius: 20px;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	#navbar ul li a:hover{
+		color:black;
+		background-color: white;
+	}
+
+#navbar ul li {
+	list-style:none;
+	font-size:1.3rem; 
+
+	}
+
+	#home{
+		display: flex;
+		flex-direction: column;
+		padding: 3px 200px;
+		justify-content: center;
+		align-items: center;
+		height:531px;
+
+	}
+	#home::before{
+	content: "";
+	background:url("imagesonlinefood/t.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 622px;
+	z-index: -1;
+	opacity: 0.89;
+
+	}
+
+	#home p{
+		text-align: center;
+		font-size: 1.5rem;
+		font-family: 'Bree Serif', serif;
+		color: #fff;
+
+	}
+
+	#home h1{
+		color: white;
+		font-family: 'Bree Serif', serif;
+	}
+
+	/*utility classes*/
+
+	#contact-box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 34px;
+
+
+	}
+
+	 #contact-box input,
+	 #contact-box textarea{
+	 	width: 100%;
+	 	padding: 0.5rem;
+	 	font-size: 1.1rem;
+	 	border-radius: 9px;
+
+	 }
+
+	 #contact-box form{
+	 	width: 50%;
+
+
+	 }
+	 #contact-box #btn{
+	 	padding: 5px;
+	 	height: 50px;
+	 	text-align: center;
+	 	font-family: 'Bree Serif', serif;
+	 	font-size: 28px;
+	 	width: 150px;
+	 	border-radius: 5px;
+	 	margin-top: 5px;
+	 	background:#1957f3;
+	 	border: 1px solid black;
+	 	cursor:pointer;
+	 	opacity: 0.7;
+
+	 }
+
+	 #contact-box #btn:hover{
+	 	opacity: 0.4;
+	 }
+
+	  #contact-box label{
+	  	font-family: 'Bree Serif', serif;
+	  	font-size:1.3rem;
+
+	  }
+
+	   footer{
+	   	background:#000000;
+	   	color: white;
+	   	padding: 9px 20px;
+	   	opacity: 1;
+	   }
+
+	   footer .footer-items{
+	   	display: flex;
+	   	justify-content: center;
+	   	align-items: center;
+	   	padding: 5px;
+	   }
+
+	   .footer-items i.fa{
+	   	padding: 20px 45px 15px 45px;
+	   	font-size: 25px;
+	   	color: #fff;
+
+	   }
+
+	   /* .footer-items i.fa:hover{
+	    	background:orange;
+	    }*/
+	.h-primary{
+		font-size: 3rem;
+		padding: 12px;
+		font-family: 'verdana';
+		
+	}
+
+	.h-secondary{
+		font-size: 2.2rem;
+		padding: 12px;
+		font-family: 'Bree Serif', serif;
+	}
+
+
+
+	.btn{
+		padding: 5px 18px;
+		border: 2px solid white;
+		background-color:brown; 
+		color:white;
+		margin: 19px;
+		border-radius: 10px;
+		font-size: 1.5rem;
+		cursor: pointer;
+		font-family: 'Bree Serif', serif;
+		align-items: center;
+		width: 200px;
+	}
+
+
+	.center{
+		text-align: center;
+	}
+
+
+	.btn:hover{
+		background-color:white;
+		color:red;
+	}
+
+	
+
+	#Services{
+		margin:34px;
+		display: flex;
+
+		
+	}
+    #Services .box{
+    	border:2px solid #fff;
+    	padding: 34px;
+    	margin-top: -25px;
+    	margin-left: 6px;
+    	margin-right: 6px;
+    	margin-bottom: 8px;
+    	border-radius: 28px;
+    	background-color: #f2f2f2;
+    
+    	
+    }
+     #Services .box img{
+     	margin: auto;
+        display: block;
+     	height: 160px;
+     	cursor: pointer;
+     }
+     #Services .box p{
+     	font-size: 1rem;
+     font-family: 'Bree Serif', serif;
+     padding: 10px; 
+
+     }
+     /*our clients*/
+
+     #client-section{
+     	height: 344px;
+     	position: relative;
+     }
+
+     #client-section::before{
+      content: "";
+      position: absolute;
+      background: url("imagesonlinefood/cook1.JPG");
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.3;
+      }
+
+     #clients{
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+     }
+
+     .client-item{
+     	padding: 38px;
+     }
+      
+   #clients img{
+   	height: 144px;
+   }
+   /*contact section*/
+   #contact{
+   	position:relative;
+   }
+
+    #contact::before{
+    	content: "";
+    	position:absolute;
+    	width: 100%;
+    	height: 100%;
+    	z-index: -1;
+    	opacity: 0.4;
+    	background:#f6f5f4;
+    	opacity: 0.9;
+    	
+    }
+    #contact h1{
+    	color: black;
+    }
+    #contact-box label{
+    	color: black;
+    }
+
+    /*specials-secton*/
+
+    #specials-section{
+    	height: 500px;
+    	position: relative;
+    	margin: 45px 0px 24px 0px;
+    }
+
+    #specials img{
+    	height: 200px;
+    	width: 300px;
+    	margin: 10px;
+    	border-radius: 20px;
+
+    	
+    }
+
+    #specials p{
+    	font-family: 'Bree Serif', serif;
+    	font-size: 1.2rem;
+
+    
+    	
+    }
+
+
+    #specials{
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+     }
+     .specials-items{
+     	padding: 20px;
+     }
+      #specials-section::before{
+      content: "";
+      position: absolute;
+      background:#b2cecf;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.3;
+      
+      }
+
+      #specials-section .menu{
+      	display: flex;
+      	justify-content: center;
+      	align-items: center;
+      	margin-top: 10px;
+      }
+      #specials-section .menu #btn-menu{
+      	padding: 5px 18px;
+		border: 2px solid white;
+		background-color:brown; 
+		color:white;
+		margin: -11px;
+		border-radius: 10px;
+		font-size: 1.5rem;
+		cursor: pointer;
+		font-family: 'Bree Serif', serif;
+		align-items: center;
+		width: 200px;
+
+      }
+
+      #specials-section .menu #btn-menu:hover{
+      	opacity: 0.7;
+      }
+
+      .specials-items p a{
+      	text-decoration: none;
+      	text-align: center;
+      	color:red;
+      }

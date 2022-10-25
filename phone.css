@@ -1,0 +1,16 @@
+#navbar{
+	flex-direction: column;
+}
+.h-primary{
+	font-size: 2.7rem;
+}
+.specials-items
+{
+	padding: 9px;
+}
+#Services .box {
+	margin-bottom:90px;
+}
+#Services{
+	flex-direction: column;
+}
